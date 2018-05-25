@@ -7,7 +7,7 @@ RUN apt-get update \
 && rm -f /var/lib/apt/lists/*_dists_*
 
 RUN apt-get update
-RUN sudo apt-get  install -y xvfb x11vnc x11-xkb-utils xfonts-100dpi xfonts-75dpi xfonts-scalable xfonts-cyrillic x11-apps
+RUN sudo apt-get  install -y xvfb
 
 ADD xvfb_init /etc/init.d/xvfb
 RUN chmod a+x /etc/init.d/xvfb
