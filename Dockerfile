@@ -8,10 +8,3 @@ RUN apt-get update \
 
 RUN apt-get update
 RUN apt install -y xvfb
-
-ADD xvfb_init /etc/init.d/xvfb
-RUN chmod a+x /etc/init.d/xvfb
-ADD xvfb_daemon_run /usr/bin/xvfb-daemon-run
-RUN chmod a+x /usr/bin/xvfb-daemon-run
-
-ENV DISPLAY :99
