@@ -7,7 +7,7 @@ RUN apt-get update \
 && rm -f /var/lib/apt/lists/*_dists_*
 
 RUN apt-get update
-RUN sudo apt-get  install -y xvfb
+RUN sudo apt install -y xvfb
 
 ADD xvfb_init /etc/init.d/xvfb
 RUN chmod a+x /etc/init.d/xvfb
